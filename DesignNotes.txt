@@ -1,0 +1,33 @@
+Design Notes
+
+4 Apps
+
+
+1. Web Map
+View core location data
+- include three.js in leaflet.js popups to display 3d models
+- include links to 3d model viewers (large) and data tables (views) associated with each core
+	- Sediment, Diatoms, Pollen, Dating, Sample Logs
+	
+2. Sample Logger (Blog)
+Simple blog format, however must include user defined tags so that samples can be tagged in posts.
+This will allow us to query the sample logs to undertand how samples have been processed in the lab.
+- Taggin system a la http://howto.philippkeller.com/2005/04/24/Tags-Database-schemas/ 'Scuttle' method
+- Might be worthwile implementing a "Toxi" method from the same website so that we can pull sampleID's from
+  the samples_table
+ 
+3. Sample Log (Blog) Query
+Using methods outlined in http://howto.philippkeller.com/2005/04/24/Tags-Database-schemas/, setup simple
+SQL query methods for subsetting all sample logs and then ordering by date.
+- Possibly at some point implement a method to collate them.
+
+4. Data Query
+All datasets will have a sampleID column, and possibly a coreID column, however with the samples_table this
+may be redundant. In any case, data sets should be able to be queried/subsetted by sampleID, coreID or depth
+ranges to show relevant data. 
+
+
+5. DataBase/Table Ingestion from .db and .csv [EXTRA]
+Extra app to be developed later, a better method for ingestion of sample processing data.
+
+**NOTE: THIS MAY ACTUALLY BE THE MOST IMPORTANT ASPECT
