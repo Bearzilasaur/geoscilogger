@@ -1,6 +1,6 @@
 Design Notes
 
-4 Apps
+4[5] Apps
 
 
 1. Web Map
@@ -29,5 +29,6 @@ ranges to show relevant data.
 
 5. DataBase/Table Ingestion from .db and .csv [EXTRA]
 Extra app to be developed later, a better method for ingestion of sample processing data.
+See: https://stackoverflow.com/questions/5871730/how-to-upload-a-file-in-django
 
 **NOTE: THIS MAY ACTUALLY BE THE MOST IMPORTANT ASPECT
